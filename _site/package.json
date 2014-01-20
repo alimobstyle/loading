@@ -1,0 +1,21 @@
+{
+  "family": "alimobstyle",
+  "name": "loading",
+  "description": "alibaba mobile css theme - loading样式",
+  "version": "1.0.0",
+  "homepage": "https://github.com/alimobstyle/loading",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alimobstyle/loading.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alimobstyle/loading/issues"
+  },
+  "keywords": ["widget"],
+  "spm": {
+    "alias": {},
+    "output": [
+      "loading.css"
+    ]
+  }
+}
