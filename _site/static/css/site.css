@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Actor';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Actor Regular'), local('Actor-Regular'), url(Actor.woff) format('woff');
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Actor Regular'), local('Actor-Regular'), url(Actor.woff) format('woff');
 }
 
 @font-face {
@@ -12,32 +12,16 @@
   src: local('Marmelad'), local('Marmelad-Regular'), url(marmelad.woff) format('woff');
 }
 
-/* alipay iconfont */
-@font-face {  
-    font-family: "rei";
-    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130419"); /* IE9 */
-    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130419#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("https://i.alipayobjects.com/common/fonts/rei.woff?20130419") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
-    url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130419")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130419#rei") format("svg"); /* iOS 4.1- */
-}
-.iconfont {
-    font-family:"rei";
-    font-style: normal;
-    font-weight: normal;
-    cursor: default;
-    -webkit-font-smoothing: antialiased;
-}
-
 body {
     background-color: #F2F0E9;
-    background-image: url(bg.gif);
+    background-image: url(gray_jean.png);
+    text-rendering: optimizelegibility;
+    font-family: "Marmelad","Lucida Grande",'Hiragino Sans GB',Georgia,sans-serif;
 }
 a {
-  color: #55A4F2;
-  text-decoration: none;
+    color: #55A4F2;
+    text-decoration: none;
 }
-
 pre, code, tt {
     font-family: Consolas,"Liberation Mono",Courier,monospace;
 }
@@ -61,7 +45,7 @@ pre, code, tt {
 #sidebar-wrapper {
     float: left;
     position: fixed;
-    color: #9c9277;
+    color: #787878;
     text-shadow: 0 1px 0 #fff;
     font-size: 14px;
     width: 220px;
@@ -78,15 +62,25 @@ pre, code, tt {
     font-family: "Marmelad", sans-serif;
 }
 #sidebar-wrapper .version {
+    font-size: 13px;
+}
+#sidebar-wrapper .description {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #ddd inset;
     font-size: 12px;
+    line-height: 1.5;
+    padding: 4px;
+    color: #888;
+    margin-bottom: 13px;
 }
 #sidebar-wrapper .source, .source-button {
-    background-color: #659324;
-    background-image: linear-gradient(#81BC2E, #659324);
+    background-color: #276195;
+    background-image: linear-gradient(#3C88CC, #276195);
     background-repeat: repeat-x;
     border: 0 none;
     border-radius: 0.25em 0.25em 0.25em 0.25em;
-    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
     color: #fff;
     display: inline-block;
     font-family: "Trebuchet MS",sans-serif;
@@ -104,10 +98,10 @@ pre, code, tt {
 #sidebar-wrapper .source:hover {
     color: #fff;
     opacity: 1;
-    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset, 0 12px 24px 2px #83C822 inset;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset, 0 12px 24px 2px #3089D8 inset;
 }
 #sidebar-wrapper .source:active {
-    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset, 0 12px 24px 2px #83C822 inset;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset, 0 12px 24px 2px #3089D8 inset;
     top: 2px;
     position: relative;
 }
@@ -121,13 +115,13 @@ pre, code, tt {
     color: rgba(0, 0, 0, 0.2);
 }
 #sidebar-wrapper .package-root a:hover {
-    color: rgba(0, 0, 0, 0.33);    
+    color: rgba(0, 0, 0, 0.33);
 }
 #navigation {
     list-style-type: none;
     font-size: 14px;
     border-top: 1px dashed #D6D4CD;
-    border-bottom: 1px dashed #D6D4CD;    
+    border-bottom: 1px dashed #D6D4CD;
     margin: 20px 0 0 0;
     padding: 10px 0;
     zoom: 1;
@@ -150,14 +144,14 @@ pre, code, tt {
     border-bottom: 1px dotted #769FD0;
 }
 #sidebar-wrapper a {
-    color: #659324;
+    color: #6c97c2;
     text-decoration: none;
 }
 #sidebar-wrapper a:hover {
-    color: #75AA2E;
+    color: #48b;
 }
 #navigation .active a {
-    color: #75AA2E;
+    color: #48d;
     font-weight: bold;
 }
 #content-wrapper {
@@ -165,50 +159,45 @@ pre, code, tt {
     border-radius: 4px;
     background-color: #FFF;
 }
-.hentry {
+#content {
     position: relative;
     padding: 10px 30px 30px;
     line-height: 1.5;
-    color: #666;    
 }
-.hentry .entry-title {
+#content .entry-title {
     margin-bottom: 12px;
     font-family: "Marmelad", sans-serif;
 }
-.hentry .meta {
+#content .meta {
     color: #BCBCBD;
     font-size: 12px;
     margin: 12px 0;
 }
-.hentry p, .hentry h1, .hentry h2, .hentry h3, .hentry h4 {
-    font-family: Georgia,'Xin Gothic','PT Sans','Hiragino Sans GB','Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #555;
-}
-.hentry h2 {
+#content h2 {
     margin-top: 40px;
     padding-bottom: 4px;
     border-bottom: 1px solid #ccc;
     font-family: "Marmelad", sans-serif;
 }
-.hentry hr {
+hr {
     display: block;
     border: 0;
     height: 4px;
     background-color: #ddd;
     margin-top: 20px;
 }
-.hentry pre {
+#content pre {
     margin: 6px 0;
     border: 1px solid #eee;
     padding: 6px 10px;
     overflow: auto;
     border-radius: 2px;
-    background-color: #F8F8F9;
+    background-color: #f8f8f9;
     line-height: 19px;
     font-size: 13px;
     white-space: pre;
 }
-.hentry code {
+#content code {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.75);
     background-color: #fee9cc;
@@ -217,19 +206,19 @@ pre, code, tt {
     margin-left: 3px;
     margin-right: 3px;
 }
-.hentry pre code, .hentry .highlight code {
+#content pre code, #content .highlight code {
     color: #5D6A6A;
     background-color: transparent;
     margin: auto;
     padding: 0;
 }
-.hentry blockquote {
+#content blockquote {
     border-left: 0.4em solid #ddd;
     color: #777;
     margin: 15px 0;
     padding: 0 15px;
 }
-.hentry blockquote p {
+#content blockquote p {
     color: #777;
 }
 #footer-wrapper {
@@ -255,10 +244,10 @@ pre, code, tt {
 }
 
 /* other */
-.hentry .doc-api {
+#content .doc-api {
     color: #784942;
 }
-.hentry .doc-api em, .hentry .doc-api code {
+#content .doc-api em, #content .doc-api code {
     font-family: Georgia, serif;
     font-weight: normal;
     font-size: 14px;
@@ -267,13 +256,13 @@ pre, code, tt {
     background: transparent;
     font-style: italic;
 }
-.hentry .nico-iframe {
+#content .nico-iframe {
     position: relative;
 }
-.hentry .nico-iframe iframe {
+#content .nico-iframe iframe {
     width: 100%;
 }
-.hentry .nico-iframe .new-window {
+#content .nico-iframe .new-window {
     position: absolute;
     top: 30px;
     right: -40px;
@@ -282,18 +271,18 @@ pre, code, tt {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
-.hentry .highlight {
+#content .highlight {
     background-color: transparent;
     padding-top: 1px;
     position: relative;
-    zoom: 1;
 }
-.hentry .collapse pre {
+#content .collapse pre {
     overflow: hidden;
     height: 60px;
 }
-.hentry .highlight .code-toggle {
+#content .highlight .code-toggle {
     position: absolute;
     top: -10px;
     right: 2px;
@@ -304,26 +293,6 @@ pre, code, tt {
     text-decoration: none;
     color: #fff;
     line-height: 1;
-}
-
-.content-area h1 a.anchor,
-.content-area h2 a.anchor,
-.content-area h3 a.anchor,
-.content-area h4 a.anchor,
-.content-area h5 a.anchor,
-.content-area h6 a.anchor {
-    margin-left: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    visibility: hidden;
-}
-.content-area h1:hover a.anchor,
-.content-area h2:hover a.anchor,
-.content-area h3:hover a.anchor,
-.content-area h4:hover a.anchor,
-.content-area h5:hover a.anchor,
-.content-area h6:hover a.anchor {
-    visibility: visible;
 }
 
 .entry-content h1 a.anchor,
@@ -355,23 +324,24 @@ pre, code, tt {
 }
 
 #module-output {
-    margin: 20px 0 0;
+    margin: 10px 0 0;
     padding: 0;
     overflow: hidden;
 }
 #module-output li {
     list-style: none;
     float: left;
-    margin: 0 1px 0 0;
+    margin: 0 1px 3px 0;
     line-height: 1;
 }
 #module-output a {
-    font-size: 14px;
-    line-height: 1;
-    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-family: arial;
+    line-height: 10px;
+    color: #ccc!important;
 }
 #module-output a:hover {
-    color: rgba(0, 0, 0, 0.35);
+    color: #aaa!important;
 }
 #output-card {
     background: #fff;
@@ -385,7 +355,7 @@ pre, code, tt {
 #output-card h3,
 #output-card p {
     margin: 0;
-    font-size: 12px;    
+    font-size: 12px;
 }
 #output-card h3 {
     margin-bottom: 3px;
@@ -393,7 +363,7 @@ pre, code, tt {
 #module-output li.module-multiable {
     font-size: 10px;
     padding: 2px;
-    background: #88C438;
+    background: #81A6EA;
     text-shadow: none;
     color: #fff;
     margin-right: 5px;
@@ -473,12 +443,109 @@ pre, code, tt {
     padding: 6px;
     border: 1px solid #ddd;
     color: #777;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
 }
 
-.nico-insert-code h2 {
+.popup-install a {
+    text-decoration:none;
+    color: #08c;
+}
+
+#maintainers {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+#maintainers a {
+    color: #777;
+    opacity: 0.7;    
+}
+
+#maintainers a:hover {
+    color: #555;    
+    opacity: 1;    
+}
+
+#maintainers img {
+    position: relative;
+    top: 3px;
+}
+
+.other-versions {
     margin: 0;
-    padding: 0;
-    border-bottom: none;
-    font-family: sans-serif;
+    padding: 3px 8px;
+    font-size: 12px;
+    background: #fff;
+    list-style: none;
+    line-height: 1.8;
+    display: none;
+    border: 1px solid #bbb;
+}
+
+.other-versions li {
+    padding-left: 3px;
+}
+
+.other-versions li.other-versions-title {
+    color: #777;
+    padding-left: 0;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px dashed #ddd;
+    text-align: center;
+}
+
+.other-versions a {
+    text-decoration:none;
+    color: #08c;
+}
+
+.other-versions a:hover {
+    text-decoration:underline;
+}
+
+/* alice */
+
+.alice #sidebar-wrapper a {
+    color: #659324;
+}
+
+.alice #sidebar-wrapper .source,
+.alice .source-button {
+    background-color: #659324;
+    background-image: linear-gradient(#81BC2E, #659324);
+    color: #fff;
+}
+
+.alice #sidebar-wrapper .source:hover {
+    color: #fff;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset, 0 12px 24px 2px #83C822 inset;
+}
+.alice #sidebar-wrapper .source:active {
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset, 0 12px 24px 2px #83C822 inset;
+}
+
+.alice #module-output li.module-multiable {
+    background: #88C438;
+    border-radius: 1px;
+    color: #FFFFFF;
+    font-size: 10px;
+    margin-right: 5px;
+    padding: 2px;
+    text-shadow: none;
+}
+
+.alice #sidebar-wrapper .package-root a {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.alice #sidebar-wrapper .package-root a:hover {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.alice #module-output a {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.alice #module-output a:hover {
+    color: rgba(0, 0, 0, 0.35);
 }
