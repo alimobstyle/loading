@@ -28,8 +28,8 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
 
-    animate: pop 0.3s ease;
-    -webkit-animation: pop 0.3s ease;
+    animate: pop 0.2s ease;
+    -webkit-animation: pop 0.2s ease;
 }
 .ali-icon-loading {
     width: 32px;
