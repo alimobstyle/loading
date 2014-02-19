@@ -1,6 +1,17 @@
 /*! define alimobstyle/loading/1.0.0/loading-debug.css */
 /* alimobstyle.loading 样式模块 */
 
+@-webkit-keyframes pop{
+    from{
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    to{
+        -webkit-transform: sacle(1);
+        transform: sacle(1);
+    }
+}
+
 .ali-loading {
     position: fixed;
     width: 150px;
@@ -17,6 +28,9 @@
     line-height: 1.5rem;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
+
+    animate: pop 0.2s ease;
+    -webkit-animation: pop 0.2s ease;
 }
 .ali-icon-loading {
     width: 32px;
